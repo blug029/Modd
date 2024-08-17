@@ -1,0 +1,19 @@
+name: Question
+description: Ask about something here.
+labels: [question]
+body:
+  - type: textarea
+    attributes:
+      label: What is your question?
+    validations:
+      required: true
+
+  - type: dropdown
+    attributes:
+      label: "What type of question is? Of LUA, or source?"
+      options:
+        - Lua
+        - Source
+        - Other
+    validations:
+      required: true
